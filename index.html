@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Слоняра - Мини-приложение</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-bar">
+  <div id="level-display">Уровень: 1</div>
+  <div id="coins-display">0 слоняр</div>
+</div>
+
+<div class="container">
+  <div class="elephant-card">
+    <div id="elephant-skin" class="elephant-skin">🐘 Бомж</div>
+    <div class="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
+    <button id="click-button">Получить слоняра</button>
+    <div id="daily-limit" class="daily-limit">Лимит сегодня: 0/100</div>
+  </div>
+
+  <div class="bonus-card">
+    <button id="referral-btn">Реферальная система +200 слоняр</button>
+    <button id="subscribe-btn">Подписка на группу +100 слоняр</button>
+  </div>
+
+  <div class="withdraw-card">
+    <input type="number" id="withdraw-amount" placeholder="Сколько слоняр вывести">
+    <div class="withdraw-buttons">
+      <button onclick="withdraw('СБП')">СБП</button>
+      <button onclick="withdraw('Карта')">Номер карты</button>
+      <button onclick="withdraw('BTC')">BTC</button>
+      <button onclick="withdraw('TON')">TON</button>
+    </div>
+    <div class="withdraw-info">Комиссия 3% • Мин вывод 1000 слоняр</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
